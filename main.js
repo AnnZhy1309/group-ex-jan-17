@@ -3,4 +3,19 @@ let data = [
   23, 97, 10, 55, 11, 20, 50, 70, 83, 47, 25, 86, 30, 60, 96, 76, 22, 67, 77,
 ];
 
-console.log(data);
+
+function doSort(data){
+  data.sort((a,b)=>a-b);
+  console.log(data);
+}
+doSort(data);
+
+function getTotal(arr){
+  var total=0;
+  for(let i=0; i < arr.length; i=i+1){
+  total=total+arr[i];
+  }
+  console.log(total);
+  return total;
+}
+getTotal(data);
